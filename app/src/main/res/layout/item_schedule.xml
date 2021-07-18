@@ -58,7 +58,7 @@
                 android:ellipsize="end"
                 android:lines="1"/>
             <TextView
-                android:id="themeTag"
+                android:id="@+id/themeTag"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tag"
