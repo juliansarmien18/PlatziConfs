@@ -18,6 +18,6 @@ class SpeakersDetailDialogFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_speakers_detail_dialogragment, container, false)
+        return inflater.inflate(R.layout.fragment_speakers_detail_dialog, container, false)
     }
 }

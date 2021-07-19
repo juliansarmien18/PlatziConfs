@@ -7,12 +7,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_parrafo">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="5dp">
 
             <TextView
                 android:id="@+id/tvHourSchedule"
@@ -36,7 +39,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="5dp">
 
             <TextView
                 android:id="@+id/ScheduleConferenceName"
@@ -58,13 +62,16 @@
                 android:ellipsize="end"
                 android:lines="1"/>
             <TextView
-                android:id="themeTag"
-                android:layout_width="match_parent"
+                android:id="@+id/themeTag"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tag"
+                android:textSize="14dp"
+                android:textStyle="bold"
                 android:ellipsize="end"
                 android:lines="1"
-                android:textColor="@color/White"/>
+                android:textColor="@color/White"
+                android:background="@drawable/shape_topico"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
