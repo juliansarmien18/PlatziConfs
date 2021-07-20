@@ -7,7 +7,7 @@ import com.plazti.conf.network.Callback
 import com.plazti.conf.network.FirestoreService
 import java.lang.Exception
 
-class SpeakerViewmodel {
+class SpeakerViewmodel: ViewModel() {
     val firestoreService = FirestoreService()
     var listSpeaker: MutableLiveData<List<Speaker>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()

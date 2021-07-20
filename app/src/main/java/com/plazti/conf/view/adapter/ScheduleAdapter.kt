@@ -5,12 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.plazti.conf.R
 import com.plazti.conf.model.Conference
-import java.lang.String.format
-import java.text.MessageFormat.format
+import com.plazti.conf.view.adapter.ScheduleListener
+import com.plazti.conf.view.ui.fragments.ScheduleFragment
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -41,8 +40,8 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener): RecyclerView.Adap
         holder.tvConferenceHour.text = hourFormat
         holder.tvConferenceAMPM.text = simpleDateFormatAMPM.format(conference.datetime).toUpperCase()
 
-        holder.itemView.setOnClickListener {
-            scheduleListener.onConferenfeClicked(conference, position)
+        holder.itemView.setOnClickListener{
+            scheduleListener.onconferenceClicked(conference, position)
         }
     }
 
