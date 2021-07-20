@@ -13,11 +13,13 @@
         android:background="@drawable/shape_parrafo">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ISimage"
             android:layout_width="match_parent"
             android:layout_height="@dimen/altoImageViewHome"
             android:src="@mipmap/ic_launcher"
             android:layout_margin="10dp"/>
         <TextView
+            android:id="@+id/ISspeakerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nombre Expositor"
@@ -27,6 +29,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/ISActualJob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trabajo Expositor"
